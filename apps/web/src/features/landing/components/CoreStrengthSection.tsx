@@ -37,7 +37,7 @@ const STATS: StatItem[] = [
     },
     {
         icon: 'school',
-        value: 100,
+        value: 1000,
         suffix: '+',
         label: 'Students Guided',
         sublabel: 'And growing daily',
@@ -46,7 +46,7 @@ const STATS: StatItem[] = [
     },
     {
         icon: 'account_balance',
-        value: 50,
+        value: 100,
         suffix: '+',
         label: 'University Partners',
         sublabel: 'Across 8+ countries',
@@ -183,7 +183,7 @@ const CoreStrengthSection: React.FC = () => {
                     <h2 className="text-[42px] md:text-[48px] max-sm:text-[28px] font-extrabold text-[#0d0d0d] leading-[1.12] tracking-tight m-0">
                         Why{' '}
                         <span className="bg-gradient-to-br from-[#9333ea] to-primary text-transparent bg-clip-text">
-                            100+ Students
+                            1000+ Students
                         </span>{' '}
                         <br className="hidden sm:block" />
                         Choose Eduwoy

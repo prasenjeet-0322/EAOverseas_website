@@ -7,67 +7,23 @@ dotenv.config({ path: path.join(__dirname, '../.env') });
 
 const seedBlogs = [
     {
-        title: "2025 Global Education Outlook: Why Germany is Dominating the Tech Landscape",
-        slug: "2025-global-education-outlook-germany-tech",
+        title: "How Eduwoy Uses AI to Guarantee Your University Admission",
+        slug: "how-eduwoy-uses-ai-for-admissions",
         content: `
-            <h2>The German Technical Renaissance</h2>
-            <p>As we approach the mid-2020s, the landscape of international education is shifting dramatically. While traditional powerhouse destinations like the US and UK remain popular, Germany has emerged as a formidable challenger, particularly for students in STEM fields.</p>
+            <h2>The Future of Overseas Education Consulting</h2>
+            <p>At Eduwoy, we've revolutionized the traditional study abroad consulting model by integrating advanced Artificial Intelligence with human expertise. This dual approach ensures that every student's journey is both highly personalized and data-driven.</p>
             
-            <blockquote>"The zero-tuition model, combined with high-tech industry integration, makes Germany the most strategic choice for the modern engineer." - Eduwoy Strategy Team</blockquote>
-
-            <h3>Key Competitive Advantages</h3>
-            <ul>
-                <li><strong>Economic Stability:</strong> Germany remains the industrial heart of Europe, offering unparalleled job security.</li>
-                <li><strong>Research Infrastructure:</strong> Institutions like TU Munich and RWTH Aachen are at the forefront of AI and Green Energy.</li>
-                <li><strong>Post-Study Opportunities:</strong> With an 18-month job seeker visa, the transition to the workforce is seamless.</li>
-            </ul>
-
-            <p>For international students, the primary hurdle is no longer financial—it's linguistic and cultural integration. At Eduwoy, we optimize your profile to meet these specific institutional requirements.</p>
-        `,
-        excerpt: "Discover why Germany has become the top destination for international STEM students in 2025, from zero-tuition to industrial dominance.",
-        author: "Prasenjeet Kumar",
-        coverImage: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=2940&auto=format&fit=crop",
-        category: "Strategy",
-        tags: ["Germany", "STEM", "2025 Guide"],
-        isPublished: true
-    },
-    {
-        title: "Mastering the Ivy League: A Blueprint for Tier-1 Admissions",
-        slug: "mastering-ivy-league-blueprint",
-        content: `
-            <h2>Beyond the GPA: The Institutional Fit</h2>
-            <p>Admissions at Tier-1 US universities have evolved beyond numerical metrics. A 4.0 GPA and perfect SAT scores are now baseline requirements, not differentiators.</p>
+            <h3>Intelligent Profile Matching</h3>
+            <p>Our proprietary AI engine analyzes thousands of data points—from your academic history and extracurricular achievements to your budgetary constraints—and instantly matches you with universities where you have the highest statistical probability of admission and scholarship success.</p>
             
-            <h3>The Eduwoy Framework for Success</h3>
-            <ol>
-                <li><strong>Intellectual Vitality:</strong> Demonstrating a passion that extends beyond the classroom.</li>
-                <li><strong>Social Impact:</strong> Quantifiable contributions to your community or industry.</li>
-                <li><strong>Institutional Alignment:</strong> Tailoring your narrative to the specific values of the university.</li>
-            </ol>
- 
-            <p>Our consultants specialize in 'Narrative Engineering'—crafting a compelling story that resonates with admissions officers at Harvard, Stanford, and MIT.</p>
+            <h3>End-to-End Success</h3>
+            <p>But AI is only half the story. Once the AI shortlists your best options, our expert counselors step in to help you craft compelling essays, prepare for visa interviews, and handle all documentation. It's the perfect blend of machine precision and human empathy.</p>
         `,
-        excerpt: "Learn the secrets of Tier-1 US admissions. It's not just about your grades; it's about your narrative and institutional alignment.",
-        author: "EA Strategy Team",
-        coverImage: "https://images.unsplash.com/photo-1498243639391-a647421c3c55?q=80&w=2940&auto=format&fit=crop",
-        category: "Elite Admissions",
-        tags: ["USA", "Ivy League", "Admissions"],
-        isPublished: true
-    },
-    {
-        title: "Digital Nomad vs. International Student: Navigating the New Visa Reality",
-        slug: "digital-nomad-vs-international-student",
-        content: `
-            <h2>A New Era of Global Mobility</h2>
-            <p>The rise of remote work has created a complex intersection between work and study visas. Countries like Spain, Italy, and Greece are introducing hybrid models that appeal to the modern 'Study-Worker'.</p>
- 
-            <p>Understanding the legal nuances of these new visa categories is essential to maintaining compliance while maximizing your international experience.</p>
-        `,
-        excerpt: "Navigating the complex world of modern visas. Which path is right for your career trajectory in a post-pandemic world?",
-        author: "Legal Compliance Unit",
-        coverImage: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=2940&auto=format&fit=crop",
-        category: "Visa Intelligence",
-        tags: ["Visa", "Legal", "Digital Nomad"],
+        excerpt: "Discover how Eduwoy combines advanced AI technology with expert human counseling to offer personalized, data-driven study abroad journeys.",
+        author: "Eduwoy Tech Team",
+        coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop",
+        category: "Eduwoy Insights",
+        tags: ["AI", "Admissions", "Eduwoy"],
         isPublished: true
     }
 ];
@@ -78,7 +34,9 @@ async function runSeed() {
         await mongoose.connect(uri);
         console.log('Connected to MongoDB Cluster');
 
-        // Clear existing blogs to avoid duplicates (optional, based on slug)
+        // Clear existing blogs
+        await Blog.deleteMany({});
+
         for (const blogData of seedBlogs) {
             await Blog.findOneAndUpdate(
                 { slug: blogData.slug },

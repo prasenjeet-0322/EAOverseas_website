@@ -17,10 +17,8 @@ const IntelligentSearchSection = lazy(() => import('@/features/landing/component
 const DestinationsSection = lazy(() => import('@/features/landing/components/DestinationsSection'));
 const ServicesSection = lazy(() => import('@/features/landing/components/ServicesSection'));
 const CoreStrengthSection = lazy(() => import('@/features/landing/components/CoreStrengthSection'));
+const BlogSection = lazy(() => import('@/features/landing/components/BlogSection'));
 const AboutUsSection = lazy(() => import('@/features/landing/components/AboutUsSection'));
-const CommunityPostsSection = lazy(() => import('@/features/landing/components/CommunityPostsSection'));
-
-const GlobalTestimonialsSection = lazy(() => import('@/features/landing/components/GlobalTestimonialsSection'));
 const FAQSection = lazy(() => import('@/features/landing/components/FAQSection'));
 const TeamSection = lazy(() => import('@/features/landing/components/TeamSection'));
 const BookingCTASection = lazy(() => import('@/features/landing/components/BookingCTASection'));
@@ -154,10 +152,9 @@ const LandingPage = () => {
                         <DestinationsSection />
                         <ServicesSection />
                         <CoreStrengthSection />
+                        <BlogSection />
                         <AboutUsSection />
-                        <CommunityPostsSection />
 
-                        <GlobalTestimonialsSection />
                         <FAQSection />
                         <TeamSection />
                         <BookingCTASection />
