@@ -141,10 +141,10 @@ const AboutUs = () => {
                     <div className="relative z-10 space-y-16 md:space-y-24">
                         <div className="text-center max-w-4xl mx-auto space-y-8">
                             <h2 className="text-primary font-[800] tracking-[0.3em] uppercase text-xs md:text-sm">The Foundation</h2>
-                            <h3 className="text-4xl md:text-6xl font-black text-gray-900 leading-[1.05]">
+                            <h3 className="text-3xl md:text-4xl font-black text-gray-900 leading-[1.05]">
                                 We Bridge the Gap Between <span className="text-primary">Ambition</span> and <span className="text-primary">Reality</span>
                             </h3>
-                            <p className="text-xl md:text-3xl text-gray-700 font-medium leading-relaxed italic border-l-4 border-primary pl-8 py-2 inline-block text-left">
+                            <p className="text-lg md:text-xl text-gray-700 font-medium leading-relaxed italic border-l-4 border-primary pl-6 py-2 inline-block text-left">
                                 "Eduwoy is more than a platform; it's a commitment to clarity in global education."
                             </p>
                         </div>
@@ -171,12 +171,12 @@ const AboutUs = () => {
                                     gradient: 'from-blue-600 to-indigo-500'
                                 }
                             ].map((pillar, idx) => (
-                                <div key={idx} className="group relative bg-white/60 backdrop-blur-3xl border border-white/50 p-12 rounded-[2.5rem] shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-700">
-                                    <div className={`w-16 h-16 bg-gradient-to-br ${pillar.gradient} text-white rounded-[1.5rem] flex items-center justify-center mb-8 shadow-lg group-hover:rotate-6 group-hover:scale-110 transition-all duration-500`}>
-                                        <span className="material-symbols-outlined text-3xl">{pillar.icon}</span>
+                                <div key={idx} className="group relative bg-white/60 backdrop-blur-3xl border border-white/50 p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-700">
+                                    <div className={`w-14 h-14 bg-gradient-to-br ${pillar.gradient} text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:rotate-6 group-hover:scale-110 transition-all duration-500`}>
+                                        <span className="material-symbols-outlined text-2xl">{pillar.icon}</span>
                                     </div>
-                                    <h4 className="text-2xl font-black text-gray-900 mb-4">{pillar.title}</h4>
-                                    <p className="text-gray-600 leading-relaxed text-lg">
+                                    <h4 className="text-xl font-black text-gray-900 mb-3">{pillar.title}</h4>
+                                    <p className="text-gray-600 leading-relaxed text-base">
                                         {pillar.desc}
                                     </p>
                                     <div className="mt-8 h-1 w-0 group-hover:w-full bg-gradient-to-r from-blue-600 to-indigo-600 transition-all duration-700 rounded-full"></div>
