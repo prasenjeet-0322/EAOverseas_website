@@ -263,10 +263,10 @@ const AboutUs = () => {
                         <div className="lg:col-span-7 space-y-16">
                             <div className="space-y-6">
                                 <h2 className="text-primary font-[800] tracking-[0.3em] uppercase text-xs md:text-sm">The Philosophy</h2>
-                                <h3 className="text-4xl md:text-7xl font-black text-gray-900 leading-[1.05]">
+                                <h3 className="text-3xl md:text-5xl font-black text-gray-900 leading-[1.05]">
                                     Why Scholars Trust <span className="text-primary">Eduwoy</span>
                                 </h3>
-                                <p className="text-xl text-gray-600 max-w-2xl leading-relaxed font-medium">
+                                <p className="text-lg text-gray-600 max-w-2xl leading-relaxed font-medium">
                                     Our methodology is defined by <span className="text-gray-900">academic rigor</span> and <span className="text-gray-900">modern transparency</span>. We don't just process files; we architect global careers.
                                 </p>
                             </div>
@@ -298,12 +298,12 @@ const AboutUs = () => {
                                         color: 'bg-blue-50 text-blue-600'
                                     }
                                 ].map((item, index) => (
-                                    <div key={index} className="group relative p-10 bg-white border border-gray-100 rounded-[2rem] hover:shadow-2xl hover:border-blue-100 transition-all duration-500">
-                                        <div className={`w-14 h-14 ${item.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300`}>
-                                            <span className="material-symbols-outlined text-3xl">{item.icon}</span>
+                                    <div key={index} className="group relative p-6 bg-white border border-gray-100 rounded-3xl hover:shadow-2xl hover:border-blue-100 transition-all duration-500">
+                                        <div className={`w-10 h-10 ${item.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-all duration-300`}>
+                                            <span className="material-symbols-outlined text-2xl">{item.icon}</span>
                                         </div>
-                                        <h4 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h4>
-                                        <p className="text-gray-500 leading-relaxed font-medium">{item.desc}</p>
+                                        <h4 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h4>
+                                        <p className="text-sm text-gray-500 leading-relaxed font-medium">{item.desc}</p>
                                     </div>
                                 ))}
                             </div>
