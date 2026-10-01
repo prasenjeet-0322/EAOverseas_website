@@ -343,27 +343,27 @@ const AboutUs = () => {
                 </section>
 
                 {/* Mission & Vision - High Impact */}
-                <section className="py-20 md:py-32 grid md:grid-cols-2 gap-10 md:gap-16 px-4 md:px-0">
-                    <div className="group relative bg-[#0f172a] p-12 md:p-20 rounded-[3rem] overflow-hidden shadow-2xl hover:-translate-y-4 transition-all duration-700">
+                <section className="py-16 md:py-24 grid md:grid-cols-2 gap-8 md:gap-12 px-4 md:px-0">
+                    <div className="group relative bg-[#0f172a] p-8 md:p-12 rounded-3xl md:rounded-[2.5rem] overflow-hidden shadow-2xl hover:-translate-y-4 transition-all duration-700">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[100px]"></div>
-                        <div className="relative z-10 space-y-8">
-                            <div className="w-16 h-16 bg-white border-2 border-primary hover:bg-primary-light/20 text-primary font-bold rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform">
-                                <span className="material-symbols-outlined text-4xl">rocket_launch</span>
+                        <div className="relative z-10 space-y-6">
+                            <div className="w-14 h-14 bg-white border-2 border-primary hover:bg-primary-light/20 text-primary font-bold rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform">
+                                <span className="material-symbols-outlined text-3xl">rocket_launch</span>
                             </div>
-                            <h3 className="text-3xl md:text-5xl font-black text-white">Our Mission</h3>
-                            <p className="text-lg md:text-xl text-gray-400 leading-relaxed font-medium">
+                            <h3 className="text-2xl md:text-4xl font-black text-white">Our Mission</h3>
+                            <p className="text-base md:text-lg text-gray-400 leading-relaxed font-medium">
                                 To democratize access to global education by providing transparent, expert-led, and highly personalized guidance that empowers every student to reach their maximum global potential.
                             </p>
                         </div>
                     </div>
-                    <div className="group relative bg-white p-12 md:p-20 rounded-[3rem] border border-gray-100 shadow-xl hover:-translate-y-4 transition-all duration-700">
+                    <div className="group relative bg-white p-8 md:p-12 rounded-3xl md:rounded-[2.5rem] border border-gray-100 shadow-xl hover:-translate-y-4 transition-all duration-700">
                         <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary-light/50 rounded-full blur-[100px]"></div>
-                        <div className="relative z-10 space-y-8">
-                            <div className="w-16 h-16 bg-primary-light/50 text-primary rounded-2xl flex items-center justify-center group-hover:-rotate-12 transition-transform">
-                                <span className="material-symbols-outlined text-4xl">visibility</span>
+                        <div className="relative z-10 space-y-6">
+                            <div className="w-14 h-14 bg-primary-light/50 text-primary rounded-2xl flex items-center justify-center group-hover:-rotate-12 transition-transform">
+                                <span className="material-symbols-outlined text-3xl">visibility</span>
                             </div>
-                            <h3 className="text-3xl md:text-5xl font-black text-gray-900">Our Vision</h3>
-                            <p className="text-lg md:text-xl text-gray-500 leading-relaxed font-medium">
+                            <h3 className="text-2xl md:text-4xl font-black text-gray-900">Our Vision</h3>
+                            <p className="text-base md:text-lg text-gray-500 leading-relaxed font-medium">
                                 To become the world's most trusted partner for international student mobility, where innovation and human empathy combine to bridge local talent with global legacies.
                             </p>
                         </div>
