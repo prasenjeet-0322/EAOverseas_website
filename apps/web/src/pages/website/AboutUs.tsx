@@ -106,24 +106,24 @@ const AboutUs = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className="relative group">
-                            <div className="aspect-[4/5] md:aspect-[4/3] bg-gray-100 rounded-[3rem] overflow-hidden relative shadow-2xl">
+                        <div className="relative group max-w-[450px] mx-auto lg:ml-auto lg:mr-0 mt-8 lg:mt-0">
+                            <div className="aspect-[4/5] md:aspect-[4/3] bg-gray-100 rounded-[2rem] overflow-hidden relative shadow-2xl">
                                 <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2940&auto=format&fit=crop')" }}></div>
                                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
                             </div>
                             {/* Floating Stats Card */}
-                            <div className="absolute -bottom-8 -left-6 md:-bottom-12 md:-left-12 bg-white/90 backdrop-blur-2xl p-6 md:p-10 rounded-[2rem] shadow-2xl border border-white/50 max-w-[220px] md:max-w-[300px] animate-float">
-                                <p className="text-primary text-[10px] md:text-xs font-black tracking-[0.2em] uppercase mb-2 md:mb-3">Our Core Promise</p>
-                                <p className="text-lg md:text-2xl font-black text-[#111418] leading-tight">
+                            <div className="absolute -bottom-6 -left-4 md:-bottom-8 md:-left-8 bg-white/90 backdrop-blur-2xl p-5 md:p-6 rounded-[1.5rem] shadow-2xl border border-white/50 max-w-[200px] md:max-w-[240px] animate-float">
+                                <p className="text-primary text-[9px] md:text-[10px] font-black tracking-[0.2em] uppercase mb-1.5 md:mb-2">Our Core Promise</p>
+                                <p className="text-base md:text-lg font-black text-[#111418] leading-tight">
                                     Quality education for every student.
                                 </p>
-                                <div className="mt-4 flex -space-x-2">
+                                <div className="mt-3 flex -space-x-2">
                                     {[1,2,3,4].map(i => (
-                                        <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-gray-200 overflow-hidden">
-                                            <img src={`https://i.pravatar.cc/100?u=${i}`} alt="user" />
+                                        <div key={i} className="w-6 h-6 md:w-7 md:h-7 rounded-full border-2 border-white bg-gray-200 overflow-hidden">
+                                            <img src={`https://i.pravatar.cc/100?u=${i}`} alt="user" className="w-full h-full object-cover" />
                                         </div>
                                     ))}
-                                    <div className="w-8 h-8 rounded-full border-2 border-white bg-white border-2 border-primary hover:bg-primary-light/20 flex items-center justify-center text-[10px] text-primary font-bold font-bold">+10k</div>
+                                    <div className="w-6 h-6 md:w-7 md:h-7 rounded-full border-2 border-white bg-white border-2 border-primary hover:bg-primary-light/20 flex items-center justify-center text-[8px] md:text-[9px] text-primary font-bold">+10k</div>
                                 </div>
                             </div>
                         </div>
