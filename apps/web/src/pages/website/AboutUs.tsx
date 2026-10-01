@@ -234,23 +234,23 @@ const AboutUs = () => {
                 </section>
 
                 {/* Our Impact - Sophisticated Counter Strip */}
-                <section className="py-12 md:py-20 relative px-4 md:px-0">
-                    <div className="absolute inset-0 bg-primary rounded-[2.5rem] md:rounded-[4rem] -rotate-1 scale-[1.02] opacity-5"></div>
-                    <div className="relative bg-white text-[#111418] rounded-[2.5rem] md:rounded-[4rem] shadow-2xl border border-gray-100 overflow-hidden px-8 md:px-16 py-12 md:py-20">
+                <section className="py-8 md:py-12 relative px-4 md:px-0">
+                    <div className="absolute inset-0 bg-primary rounded-3xl md:rounded-[3rem] -rotate-1 scale-[1.02] opacity-5"></div>
+                    <div className="relative bg-white text-[#111418] rounded-3xl md:rounded-[3rem] shadow-xl border border-gray-100 overflow-hidden px-6 md:px-12 py-8 md:py-12">
                         <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-purple-50/50 to-transparent"></div>
-                        <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8 items-center">
+                        <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6 items-center">
                             {[
-                                { count: 10000, suffix: '+', label: 'Global Scholars', color: 'text-primary' },
-                                { count: 500, suffix: '+', label: 'Partner Institutions', color: 'text-primary' },
-                                { count: 25, suffix: '+', label: 'Study Destinations', color: 'text-primary' },
+                                { count: 3, suffix: '+', label: 'Years Active', color: 'text-primary' },
+                                { count: 1000, suffix: '+', label: 'Students Guided', color: 'text-primary' },
+                                { count: 100, suffix: '+', label: 'University Partners', color: 'text-primary' },
                                 { count: 98, suffix: '%', label: 'Success Rate', color: 'text-primary' }
                             ].map((item, index) => (
                                 <div key={index} className="flex flex-col items-center group">
-                                    <div className={`text-4xl md:text-6xl font-[950] ${item.color} mb-3 flex items-center group-hover:scale-110 transition-transform duration-500`}>
+                                    <div className={`text-3xl md:text-5xl font-[950] ${item.color} mb-2 flex items-center group-hover:scale-110 transition-transform duration-500`}>
                                         <Counter end={item.count} duration={2500} />
-                                        <span className="text-2xl md:text-4xl ml-1">{item.suffix}</span>
+                                        <span className="text-xl md:text-3xl ml-1">{item.suffix}</span>
                                     </div>
-                                    <div className="text-gray-400 font-[800] text-xs md:text-sm tracking-[0.2em] uppercase text-center">{item.label}</div>
+                                    <div className="text-gray-400 font-[800] text-[9px] md:text-xs tracking-[0.2em] uppercase text-center">{item.label}</div>
                                 </div>
                             ))}
                         </div>
