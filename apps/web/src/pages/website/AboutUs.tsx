@@ -258,7 +258,7 @@ const AboutUs = () => {
                 </section>
 
                 {/* Why Students Choose Us - High-End Redesign */}
-                <section className="py-24 md:py-40 relative px-4 md:px-0">
+                <section className="pt-16 pb-8 md:pt-24 md:pb-12 relative px-4 md:px-0">
                     <div className="grid lg:grid-cols-12 gap-16 md:gap-24 items-center">
                         <div className="lg:col-span-7 space-y-16">
                             <div className="space-y-6">
@@ -343,7 +343,7 @@ const AboutUs = () => {
                 </section>
 
                 {/* Mission & Vision - High Impact */}
-                <section className="py-16 md:py-24 grid md:grid-cols-2 gap-8 md:gap-12 px-4 md:px-0">
+                <section className="py-8 md:py-12 grid md:grid-cols-2 gap-8 md:gap-12 px-4 md:px-0">
                     <div className="group relative bg-[#0f172a] p-8 md:p-12 rounded-3xl md:rounded-[2.5rem] overflow-hidden shadow-2xl hover:-translate-y-4 transition-all duration-700">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[100px]"></div>
                         <div className="relative z-10 space-y-6">
@@ -371,7 +371,7 @@ const AboutUs = () => {
                 </section>
 
                 {/* Our Initiatives - Blogs */}
-                <section className="py-24 md:py-40 px-4 md:px-0">
+                <section className="pt-12 pb-24 md:pt-16 md:pb-40 px-4 md:px-0">
                     <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-20 md:mb-24">
                         <div className="space-y-6 max-w-2xl">
                             <h2 className="text-primary font-[800] tracking-[0.3em] uppercase text-xs md:text-sm">Knowledge Hub</h2>
