@@ -88,11 +88,12 @@ const IntelligentSearchSection = () => {
         }).catch(err => console.error("Failed to fetch universities from backend", err));
     }, []);
 
-    // Universities: filter by country + search, then sort
+    // Universities: filter by country + search, then sort, then limit to 8 items (2 rows)
     const filteredUniversities = liveUniversities
         .filter(u => selectedCountry ? u.country === selectedCountry : true)
         .filter(u => uniSearch ? u.name.toLowerCase().includes(uniSearch.toLowerCase()) || u.location.toLowerCase().includes(uniSearch.toLowerCase()) : true)
-        .sort((a, b) => a.rankNum - b.rankNum);
+        .sort((a, b) => a.rankNum - b.rankNum)
+        .slice(0, 8);
 
 
     return (
