@@ -77,7 +77,7 @@ const IntelligentSearchSection = () => {
                     rankNum: u.ranking ? parseInt(u.ranking) : 999,
                     rank: u.ranking ? `#${u.ranking} Global` : 'Top Ranked',
                     tuition: u.fees?.tuition || 'Varies',
-                    acceptRate: 'N/A', 
+                    acceptRate: u.acceptanceRate || 'N/A', 
                     courses: u.courses?.length || Math.floor(Math.random() * 2000) + 1000,
                     scholarships: true,
                     type: u.universityType || 'Public',
