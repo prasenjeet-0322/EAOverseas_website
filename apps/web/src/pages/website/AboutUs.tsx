@@ -90,14 +90,7 @@ const AboutUs = () => {
                     <div className="grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
                         <div className="flex flex-col gap-6 md:gap-8">
                             <div className="space-y-6 md:space-y-8">
-                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-light/50 border border-purple-100/50 text-primary text-xs font-bold tracking-widest uppercase">
-                                    <span className="relative flex h-2 w-2">
-                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
-                                        <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                                    </span>
-                                    Empowering Global Scholars
-                                </div>
-                                <h1 className="text-4xl md:text-7xl font-[900] leading-[1.05] tracking-tight text-[#111418]">
+                                <h1 className="text-3xl md:text-5xl font-[900] leading-[1.05] tracking-tight text-[#111418]">
                                     Shaping Global <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-violet-600">Education</span> Decisions
                                 </h1>
                                 <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-[540px]">
