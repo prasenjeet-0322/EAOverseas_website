@@ -193,16 +193,16 @@ const AboutUs = () => {
                 </section>
  
                 {/* Our Process - Step-by-Step Modernized */}
-                <section className="py-24 md:py-40 bg-gray-900 rounded-[3rem] md:rounded-[4rem] px-8 md:px-16 my-12 md:my-20 relative overflow-hidden">
+                <section className="py-16 md:py-24 bg-gray-900 rounded-[3rem] md:rounded-[4rem] px-8 md:px-16 my-8 md:my-12 relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
                         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500 rounded-full blur-[150px]"></div>
                         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-500 rounded-full blur-[180px]"></div>
                     </div>
  
-                    <div className="relative z-10 space-y-20 md:space-y-32">
-                        <div className="text-center space-y-6">
+                    <div className="relative z-10 space-y-12 md:space-y-20">
+                        <div className="text-center space-y-4">
                             <h2 className="text-purple-400 font-black tracking-widest uppercase text-xs md:text-sm">The Roadmap</h2>
-                            <h3 className="text-3xl md:text-6xl font-black text-white">Your 5-Step Path to <span className="text-purple-400 underline decoration-violet-500 decoration-4 underline-offset-8">Global Success</span></h3>
+                            <h3 className="text-2xl md:text-4xl font-black text-white">Your 5-Step Path to <span className="text-purple-400 underline decoration-violet-500 decoration-4 underline-offset-8">Global Success</span></h3>
                         </div>
  
                         <div className="grid md:grid-cols-5 gap-0 relative">
@@ -217,15 +217,15 @@ const AboutUs = () => {
                                 { step: 5, title: 'Inauguration', desc: 'Pre-departure briefing and global arrival.', icon: 'flight_takeoff' }
                             ].map((item, index) => (
                                 <div key={index} className="group relative flex flex-col items-center text-center px-4 mb-20 md:mb-0 transition-all duration-500 hover:scale-105">
-                                    <div className="w-24 h-24 rounded-[2rem] bg-gray-800 border-2 border-blue-500/50 flex flex-col items-center justify-center text-white relative shadow-2xl group-hover:bg-blue-600 group-hover:border-blue-400 transition-all duration-500">
-                                        <span className="material-symbols-outlined text-4xl mb-1">{item.icon}</span>
-                                        <span className="text-xs font-black text-blue-400 group-hover:text-white">STEP 0{item.step}</span>
+                                    <div className="w-20 h-20 rounded-3xl bg-gray-800 border-2 border-blue-500/50 flex flex-col items-center justify-center text-white relative shadow-2xl group-hover:bg-blue-600 group-hover:border-blue-400 transition-all duration-500">
+                                        <span className="material-symbols-outlined text-3xl mb-1">{item.icon}</span>
+                                        <span className="text-[10px] font-black text-blue-400 group-hover:text-white">STEP 0{item.step}</span>
                                         {/* Mobile Connecting Line */}
                                         <div className="md:hidden absolute -bottom-10 left-1/2 -translate-x-1/2 w-[2px] h-8 bg-blue-500/20"></div>
                                     </div>
-                                    <div className="mt-8 space-y-4">
-                                        <h4 className="font-black text-white text-xl md:text-2xl">{item.title}</h4>
-                                        <p className="text-gray-400 text-sm md:text-base leading-relaxed">{item.desc}</p>
+                                    <div className="mt-6 space-y-3">
+                                        <h4 className="font-black text-white text-lg md:text-xl">{item.title}</h4>
+                                        <p className="text-gray-400 text-xs md:text-sm leading-relaxed">{item.desc}</p>
                                     </div>
                                 </div>
                             ))}
