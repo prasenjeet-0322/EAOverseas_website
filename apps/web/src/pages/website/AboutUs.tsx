@@ -370,71 +370,7 @@ const AboutUs = () => {
                     </div>
                 </section>
 
-                {/* Our Initiatives - Blogs */}
-                <section className="pt-12 pb-24 md:pt-16 md:pb-40 px-4 md:px-0">
-                    <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-20 md:mb-24">
-                        <div className="space-y-4 max-w-2xl">
-                            <h2 className="text-primary font-[800] tracking-[0.3em] uppercase text-xs md:text-sm">Knowledge Hub</h2>
-                            <h3 className="text-3xl md:text-5xl font-black text-gray-900 leading-tight">Insights from our <span className="text-primary underline underline-offset-8">Global Experts</span></h3>
-                            <p className="text-lg text-gray-600 leading-relaxed font-medium">
-                                Stay ahead of the curve with the latest global education trends, ethical insights, and comprehensive guides curated by the Eduwoy team.
-                            </p>
-                        </div>
-                        <button onClick={() => navigate('/blogs')} className="group flex items-center gap-2 text-primary font-black text-base hover:gap-4 transition-all">
-                            View All Insights
-                            <span className="material-symbols-outlined font-black">arrow_forward</span>
-                        </button>
-                    </div>
- 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
-                        {[
-                            {
-                                id: 1,
-                                img: blogDestinations,
-                                title: 'Top 10 Global Destinantions 2026',
-                                category: 'TRENDS',
-                                desc: 'An analytical deep-dive into the most vibrant and emerging student cities for the upcoming cycle.'
-                            },
-                            {
-                                id: 2,
-                                img: blogIelts,
-                                title: 'The Ethics of Language Proficiency',
-                                category: 'GUIDANCE',
-                                desc: 'Beyond scores: How to master IELTS with a focus on long-term academic communication excellence.'
-                            },
-                            {
-                                id: 3,
-                                img: blogVisa,
-                                title: 'Decoding Multi-National Visa Policies',
-                                category: 'REGULATIONS',
-                                desc: 'A strategic guide to navigating the complex landscape of international student visa regulations.'
-                            }
-                        ].map((item, index) => (
-                            <div
-                                key={index}
-                                onClick={() => navigate(`/blogs/${item.id}`)}
-                                className="group cursor-pointer space-y-6"
-                            >
-                                <div className="relative aspect-[16/10] rounded-3xl overflow-hidden shadow-xl">
-                                    <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
-                                    <div className="absolute top-4 left-4 px-3 py-1.5 bg-white/90 backdrop-blur-md rounded-lg text-[9px] font-black tracking-widest text-[#0f172a] shadow-lg">
-                                        {item.category}
-                                    </div>
-                                </div>
-                                <div className="space-y-3 px-2">
-                                    <h3 className="text-xl font-black text-gray-900 group-hover:text-blue-600 transition-colors duration-300 leading-tight">{item.title}</h3>
-                                    <p className="text-gray-500 leading-relaxed text-sm font-medium">{item.desc}</p>
-                                    <div className="pt-2">
-                                        <span className="inline-flex items-center gap-2 text-blue-600 font-bold text-sm border-b-2 border-transparent group-hover:border-blue-600 transition-all py-1">
-                                            Read Full Insight
-                                            <span className="material-symbols-outlined text-sm">north_east</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </section>
+
 
         </div>
     );
